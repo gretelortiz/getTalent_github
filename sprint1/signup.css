@@ -1,6 +1,6 @@
 body 
 {
-    background-color: #4D97FF;
+    background-color: rgba(77, 151, 255, 0.3);
     font-family:'Dosis', sans-serif;
 }
 
@@ -27,7 +27,7 @@ input[type=email] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #4D97FF;
+    border: 1px solid #C1FF46;
     border-radius: 4px;
     box-sizing: border-box;
 
@@ -39,7 +39,7 @@ input[type=password]{
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #4D97FF;
+    border: 1px solid #C1FF46;
     border-radius: 4px;
     box-sizing: border-box;
 } 
@@ -51,17 +51,16 @@ select {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #4D97FF;
+    border: 1px solid #C1FF46;
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 
 input[type=submit] {
     font-family:'Dosis', sans-serif;
     font-size: 16px;
     width: 100%;
-    background-color: #C1FF46 ;
+    background-color:  #4D97FF;
     color: rgb(0, 0, 0);
     padding: 14px 20px;
     margin: 8px 0;
@@ -71,7 +70,7 @@ input[type=submit] {
     cursor: pointer;
 }
 input[type=submit]:hover {
-    background-color: #aaf01e;
+    background-color:rgba(77, 151, 255, 0.5);
 }
 .criterios_password {
     font-size: 14px;

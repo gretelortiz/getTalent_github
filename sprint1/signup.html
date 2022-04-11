@@ -19,9 +19,9 @@
             <h3>Crea una cuenta</h3>
         </div>
         <form action="" class="form_registro" id="form_registro">
-            <input type="email" name="email" id="email" placeholder="Correo electronico" class="controls"> 
+            <input type="email" name="email" id="email" placeholder="Correo electronico" class="controls" required> 
             <br>
-            <input type="password" name="password" id="password" placeholder="Contraseña" class="controls"> 
+            <input type="password" name="password" id="password" placeholder="Contraseña" class="controls" required> 
             <ul hidden class="criterios_password"> 
                 <li>Mínimo 6 máximo 20 caracteres alfanuméricos</li>
                 <li>Mínimo una mayúscula</li>
@@ -29,7 +29,7 @@
                 <li>Mínimo un caracter especial (.-!?!)</li>
             </ul>
             <br>
-            <input type="password" name="confirm_password id "confirm_password placeholder="Confirmacion de contraseña" class="controls">
+            <input type="password" name="confirm_password id "confirm_password placeholder="Confirmacion de contraseña" class="controls" required>
             <br>
             <select name="user_type" id="user_type" class="controls"> 
                 <option value="solicitante">Solicitante</option>
