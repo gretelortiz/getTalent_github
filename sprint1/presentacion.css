@@ -1,12 +1,13 @@
-body 
+body
 {
-    background-color: #4D97FF;
+    background-color: rgba(77, 151, 255, 0.3);
     font-family:'Dosis', sans-serif;
+
 } 
 
 #link {
         width: 400px;
-        background-color: aliceblue;
+        background-color:aliceblue;
         padding: 30px;
         margin: auto;
         margin-top: 100px;
@@ -14,6 +15,7 @@ body
         font-size: 25px; 
         border-radius: 20px;
         line-height: 30px;
+        text-align: center;
 }
 
 #link p {
@@ -24,10 +26,10 @@ body
 
 
 input[type=submit] {
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
-    background-color: #C1FF46 ;
-    color: rgb(0, 0, 0);
+    background-color:  #4D97FF;
+    color: rgb(255, 255, 255);
     padding: 14px 20px;
     margin: 8px 0;
     border: 1px solid #4D97FF;
@@ -37,7 +39,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #aaf01e;
+    background-color: rgba(77, 151, 255, 0.5);
 }
 
 
@@ -47,7 +49,7 @@ input[type=url] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #4D97FF;
+    border: 1px solid #C1FF46;
     border-radius: 4px;
     box-sizing: border-box; 
 }
