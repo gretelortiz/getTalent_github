@@ -76,4 +76,12 @@ input[type=submit]:hover {
     font-size: 14px;
     color: rgb(33, 28, 37);
     }
+.criterios_password_oculto {
+    display: none;
+}
     
+.rojo {
+    color: red;
+}
+li {display: none}
+input:focus:invalid ~ li {display: block}
