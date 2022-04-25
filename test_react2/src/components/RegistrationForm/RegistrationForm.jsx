@@ -1,16 +1,19 @@
 import React from "react";
 import { useState } from "react";
 import "./RegistrationForm.css";
+import { useNavigate } from "react-router-dom";
 
 function RegistrationFrom() {
   const [email, setEmail] = useState("");
-  const [error, setError] = useState("criterios_password");
   const [password, setPassword] = useState("");
-  const rojo="rojo"
+  const [perfil, setPerfil] = useState("solicitante");
+  const navigate = useNavigate();
   const HandleRegistro = (e) => {
     e.preventDefault();
+
+    navigate("/home");
   };
-  
+  console.log(perfil);
   console.log("valorEmail", email);
   console.log("ValorPassword", password);
   return (
@@ -27,7 +30,7 @@ function RegistrationFrom() {
       </div>
       <form
         action=""
-        class="form_registro"
+        className="form_registro"
         id="form_registro"
         onSubmit={HandleRegistro}
       >
@@ -36,43 +39,50 @@ function RegistrationFrom() {
           name="email"
           id="email"
           placeholder="Correo electronico"
-          class="controls"
+          className="controls"
           required
           onChange={(e) => setEmail(e.target.value)}
         />
         <br />
         <input
-          pattern= "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,20}$"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,20}$"
           type="password"
           name="password"
           id="password"
           placeholder="Contraseña"
-          class="controls"
+          className="controls"
           required
           onChange={(e) => setPassword(e.target.value)}
         />
-        <ul className={`${error} ${rojo}` }>
-          <li>Mínimo 6 máximo 20 caracteres alfanuméricos</li>
-          <li>Mínimo una mayúscula</li>
-          <li>Mínimo un caracter númerico</li>
-          <li>Mínimo un caracter especial (.-!?!)</li>
-        </ul>
-    
+
         <br />
         <input
+          pattern={password}
           type="password"
-          name="confirm_password id "
+          name="confirm_password id"
           confirm_password
           placeholder="Confirmacion de contraseña"
-          class="controls"
+          className="controls"
           required
         />
         <br />
-        <select name="user_type" id="user_type" class="controls">
+        <select
+          name="user_type"
+          id="user_type"
+          className="controls"
+          onChange={(e) => setPerfil(e.target.value)}
+        >
           <option value="solicitante">Solicitante</option>
           <option value="empleador">Empleador</option>
         </select>
         <br />
+        <h6>
+          Contraseña:
+          <li>Mínimo 6 máximo 20 caracteres alfanuméricos </li>
+          <li>Mínimo una mayúscula</li>
+          <li>Mínimo un caracter númerico</li>
+          <li>Mínimo un caracter especial (.-!?!)</li>
+        </h6>
 
         <input type="submit" name="submit" id="submit" value="Registrarme" />
       </form>

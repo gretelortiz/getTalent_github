@@ -44,9 +44,9 @@ return (
           <input type="email" name="email" id="email" placeholder='micorreo@gmail.com' />
           <br />
           <label htmlFor="Residencia">Residencia actual</label> <br />
-          <input type="Calle" name="Calle" id="Calle" placeholder='Calle y número' />
-          <input type="Estado" name="Estado" id="Estado" placeholder='Estado' />
-          <input type="Minicipio" name="Municipio" id="Municipio" placeholder='Municipio' />
+          <input type="text" name="Calle" id="Calle" placeholder='Calle y número' />
+          <input type="text" name="Estado" id="Estado" placeholder='Estado' />
+          <input type="text" name="Municipio" id="Municipio" placeholder='Municipio' />
           <input type="submit" value="Actualizar"/>
     </form>
 
